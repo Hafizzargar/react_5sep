@@ -1,0 +1,75 @@
+/* Container for each cryptocurrency card */
+.disp-container {
+    display: flex;
+    align-items: center;
+
+    justify-content: space-around;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .disp-container:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Image styling */
+  .disp-container img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  /* Cryptocurrency name and symbol styling */
+  .disp-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .disp-info span {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .disp-info .symbol {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Market cap and percentage changes */
+  .disp-stats {
+    text-align: right;
+  }
+  
+  .disp-stats .market-cap {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2e8b57;
+  }
+  
+  .disp-stats .mkt-change {
+    font-size: 14px;
+    color: #ff4500;
+  }
+  
+  /* Responsive layout */
+  @media (max-width: 768px) {
+    .disp-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .disp-info {
+      margin-bottom: 10px;
+    }
+  
+    .disp-stats {
+      text-align: left;
+    }
+  }
+  
